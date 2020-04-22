@@ -8,6 +8,10 @@
     <!-- Fake favicon, to avoid extra request to server -->
     <link rel="shortcut icon" href="data:;base64,iVBORw0KGgo=">
     <title>Website</title>
+    <script>
+        var lang = window.localStorage.getItem('lang') || 'tw';
+        location.href = '/' + lang + '/index.html';
+    </script>
 </head>
 <body class="nk-body body-wider bg-theme" style="background: #566C73;">
     
