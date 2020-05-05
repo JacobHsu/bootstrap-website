@@ -20,6 +20,13 @@
         </header>
     </div>
 
+    <div style="position: fixed;bottom: 20px;right: 20px;z-index: 3;">
+      <a href="mailto:jacob.hsu.tw@gmail.com"
+        onmousedown="this.children[0].style.display = 'none';this.children[1].style.display = '';"
+        onmouseup="this.children[1].style.display = 'none'; this.children[0].style.display = '';">
+        <img src="../images/email.png" /><img style="display:none;" src="../images/email-click.png" /></a>
+    </div>
+
       
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js"></script>
     <script>
