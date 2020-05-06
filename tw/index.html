@@ -6,26 +6,32 @@
     <!-- Fav Icon  -->
     <link rel="shortcut icon" href="/images/favicon.png">
     <title>Hello Taiwan</title>
+    <link rel="stylesheet" href="../assets/css/bg.css?ver=1">
 </head>
-<body class="nk-body body-wider bg-theme" style="background: #566C73;">
-    <div class="nk-wrap">
-        <header class="nk-header page-header is-transparent is-sticky is-dark" id="header">
-          <!-- Logo @s -->
-          <div class="header-logo logo animated" data-animate="fadeInDown" data-delay=".6">
-            <a href=".." class="logo-link">
-              <img id="logoDark" class="logo-dark"  alt="logo">
-              <!-- <img class="logo-light" src="../images/xxx.png" srcset="../images/xx.png 2x" alt="logo"> -->
-            </a>
-          </div>
-        </header>
-    </div>
 
-    <div style="position: fixed;bottom: 20px;right: 20px;z-index: 3;">
-      <a href="mailto:jacob.hsu.tw@gmail.com"
-        onmousedown="this.children[0].style.display = 'none';this.children[1].style.display = '';"
-        onmouseup="this.children[1].style.display = 'none'; this.children[0].style.display = '';">
-        <img src="../images/email.png" /><img style="display:none;" src="../images/email-click.png" /></a>
+<body class="nk-body" style="background: #566C73;">
+    <div id="head">header</div>
+    <div id="content">
+      <div class="nk-wrap">
+          <header class="nk-header page-header is-transparent is-sticky is-dark" id="header">
+            <!-- Logo @s -->
+            <div class="header-logo logo animated" data-animate="fadeInDown" data-delay=".6">
+              <a href=".." class="logo-link">
+                <img id="logoDark" class="logo-dark"  alt="logo">
+                <!-- <img class="logo-light" src="../images/xxx.png" srcset="../images/xx.png 2x" alt="logo"> -->
+              </a>
+            </div>
+          </header>
+      </div>
+
+      <div style="position: fixed;bottom: 20px;right: 20px;z-index: 3;">
+        <a href="mailto:jacob.hsu.tw@gmail.com"
+          onmousedown="this.children[0].style.display = 'none';this.children[1].style.display = '';"
+          onmouseup="this.children[1].style.display = 'none'; this.children[0].style.display = '';">
+          <img src="../images/email.png" /><img style="display:none;" src="../images/email-click.png" /></a>
+      </div>
     </div>
+    <div id="footer">footer</div>
 
       
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js"></script>
@@ -36,4 +42,5 @@
         document.getElementById("logoDark").srcset  = avatar
     </script> 
 </body>
+
 </html>
